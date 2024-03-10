@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+background-color: white;
+box-shadow: 0 0 5px 0 gray;
+z-index: 99;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+nav{
+    height: 100%;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+  margin-left: 15px;
+  font-size: 18px;
+  padding: 8px 10px;
+  transition: .3s linear;
+  border-radius: 10px;
+}
+.nav-links li a{
+ text-decoration: none;
+ color: rgb(0, 0, 0,0.7);
+
+}
+.nav-links li:hover a{
+ text-decoration: underline;
+ color: white;
+
+}
+.nav-links li:hover{
+background-color: rgb(81, 105, 244);
+border-bottom: 1px solid black;
+
+}
+.main_page1{
+    margin-top: 100px;
+}
+.main_page1_content{
+    /* background: url('hqdefault.jpg'); */
+    background: url('https://content.jdmagicbox.com/comp/bokaro/s4/9999p6542.6542.210922014948.b2s4/catalogue/dvk-computer-classes-chandrapura-bokaro-computer-training-institutes-0yd2zoovhy.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.main_page1_content h1{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: black;
+    width: 0;
+    white-space: nowrap;
+    animation: width 3s linear 2s infinite;
+   
+}
+@keyframes width {
+    0%{
+       width: 0;
+       white-space: nowrap;
+    }
+    100%{
+       width: 800px; 
+       white-space: nowrap;
+    }
+}
